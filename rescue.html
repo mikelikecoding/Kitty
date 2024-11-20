@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue</title>
+    <link rel="stylesheet" href="css/main.css">
+   
+</head>
+<body id="rescue">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1>Meet Our Cats</h1>
+    </header>
+    <main>
+        <div class="cat-gallery" id="cat-gallery">
+            <!-- Images will be displayed here -->
+        </div>
+
+    </main>
+    <!-- <script>
+        // Get cat data from localStorage
+        const catData = JSON.parse(localStorage.getItem("catData"));
+
+        const gallery = document.getElementById("cat-gallery");
+
+        // Render images in the gallery
+        if (catData && catData.length > 0) {
+            catData.forEach(cat => {
+                const card = document.createElement("div");
+                card.classList.add("cat-card");
+
+                const img = document.createElement("img");
+                img.src = cat.images;
+                img.alt = cat.name;
+
+                img.addEventListener("click", () => {
+                    localStorage.setItem("selectedCat", JSON.stringify(cat));
+                    window.location.href = "adopt.html";
+                });
+
+                card.appendChild(img);
+                gallery.appendChild(card);
+            });
+        } else {
+            gallery.innerHTML = "<p>No cats available at the moment.</p>";
+        }
+    </script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

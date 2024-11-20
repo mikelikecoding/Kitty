@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Log Page</title>
+</head>
+<body id="log">
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1>CATS OUR US!</h1>
+        <p>Rescue, Adoption, and Rehab for our cats</p>
+    </header>
+    
+    <main>
+        <form id="form">
+            <p>Contact Information</p>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <span id="emailError"></span>
+
+            <input type="text" name="first" placeholder="First Name" required>
+            <span id="nameError"></span>
+            
+            <input type="text" name="last" placeholder="Last Name" required>
+
+            <button class="submit">Next</button>
+        </form>
+        <div id="formMessage"></div>
+    </main> 
+
+    <!-- <script>
+        const form = document.getElementById('form');
+        const formMessage = document.getElementById('formMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            const formData = new FormData(form);
+            const formValues = Object.fromEntries(formData.entries());
+
+            // Save the form data in localStorage
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push(formValues);
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // Show success message
+            formMessage.innerHTML = `<p>Form submitted successfully! Thank you, ${formValues.first} ${formValues.last}.</p>`;
+            
+            // Redirect to rescue.html after 2 seconds
+            setTimeout(() => {
+                window.location.href = 'rescue.html'; // Redirect to rescue page after 2 seconds
+            }, 2000);
+
+            // Optionally reset the form
+            form.reset();
+        });
+    </script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

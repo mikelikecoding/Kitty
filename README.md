@@ -1,0 +1,4 @@
+This app is on how to rescue and adopt cats
+
+Consist of HTML, CSS, VINILLA JAVASCRIPT
+TO START SIMPLE CD PUBLIC TYPE OPEN INDEX.HTMLIN LOWERCASE
