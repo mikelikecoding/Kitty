@@ -1,63 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adopt Your Cat</title>
-    <link rel="stylesheet" href="css/main.css">
-    
-</head>
-<body class="cer2" id="adopt">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="cer2" id="adopt">
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </nav>
-        <h1>Adopt Your Cat</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+      <h1>Adopt Your Cat</h1>
     </header>
     <main>
-        <div id="cat-info" class="cat-details"></div>
-        <div class="actions">
-            <button id="no-btn">No</button>
-            <button id="yes-btn">Yes</button>
-        </div>
+      <div id="cat-info" class="cat-details"></div>
+      <div class="actions">
+        <button id="no-btn">No</button>
+        <button id="yes-btn">Yes</button>
+      </div>
     </main>
-
-    <!-- <script>
-        const catInfoDiv = document.getElementById('cat-info');
-        const selectedCat = JSON.parse(localStorage.getItem('selectedCat'));
-
-        if (selectedCat) {
-            // Display cat image
-            const img = document.createElement('img');
-            img.src = selectedCat.images; 
-            img.alt = selectedCat.name;
-            img.classList.add('cat-image');
-
-            // Display cat name
-            const name = document.createElement('p');
-            name.textContent = `Name: ${selectedCat.name}`;
-            name.classList.add('cat-name');
-
-            catInfoDiv.appendChild(img);
-            catInfoDiv.appendChild(name);
-        } else {
-            // Handle case where no cat is selected
-            const errorMessage = document.createElement('p');
-            errorMessage.textContent = "No cat selected. Please go back to the rescue page.";
-            catInfoDiv.appendChild(errorMessage);
-        }
-
-        // No button: return to rescue.html
-        document.getElementById('no-btn').addEventListener('click', () => {
-            window.location.href = 'rescue.html';
-        });
-
-        // Yes button: go to certificate.html
-        document.getElementById('yes-btn').addEventListener('click', () => {
-            window.location.href = 'certificate.html';
-        });
-    </script> -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

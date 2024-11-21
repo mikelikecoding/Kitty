@@ -24,6 +24,7 @@
 
 .homeSec img {
     margin-left: 10%;
+    border-radius: 5%;
 }
 
 header {
@@ -141,6 +142,7 @@ main {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 
@@ -223,6 +225,11 @@ main {
     justify-content: center;
 }
 
+.redCat img {
+    border-top-left-radius : 5%;
+    border-top-right-radius: 5%;
+}
+
 .b {
     display: flex;
     flex-direction: column;
@@ -234,7 +241,8 @@ main {
     background-color: brown;
     color: antiquewhite;
     line-height: .1; 
-    
+    border-top-left-radius : 5%;
+    border-top-right-radius: 5%;
 }
 
 .b h1 {
@@ -271,14 +279,17 @@ main {
     width: 300px;
     height: 75px !important;
     background-color: #d89595;
-    /* color: yellow !important; */
     margin-bottom: 3%;
+    border-radius: 5%;
+    font-size: 20px;
 }
 
 #form button {
     background-color: #d89595;
     width: 100px;
     height: 75px;
+    font-size: 20px;
+    border-radius: 50%;
 }
 
 
