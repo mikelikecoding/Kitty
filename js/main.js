@@ -2,6 +2,7 @@
 // Updated main.js with all 24 cat data
 // Initialize cat data
 // Simulated Cat Data
+
 const catData = [
   { number: 0, name: "Carolyn", images: "./images/cat0.jpg" },
   { number: 1, name: "Aaron", images: "./images/cat1.jpg" },
@@ -85,6 +86,7 @@ function rescuePageLogic() {
     gallery.innerHTML = "<p>No cats available at the moment.</p>";
   }
 }
+
 
 // ADOPT PAGE
 function adoptPageLogic() {
@@ -180,4 +182,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // Optionally, for displaying full current date
   const currentDate = new Date().toLocaleDateString();
   document.getElementById("currentDate").textContent = currentDate;
+});
+
+
+//CONTACT PAGE
+
+// Select the form and the message display section
+const form = document.getElementById('form2');
+const messageSection = document.querySelector('.message');
+
+// Add an event listener to handle the form submission
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from refreshing the page
+
+  // Grab the user's input
+  const firstName = form.querySelector('input[name="first"]').value;
+  const lastName = form.querySelector('input[name="last"]').value;
+
+  // Display the confirmation message
+  messageSection.innerHTML = `
+    <p>Thank you, <strong>${firstName} ${lastName}</strong>! We will contact you soon.</p>
+  `;
+
+  // Clear the form fields
+  form.reset();
+
+   // Set a timeout to clear the message after 4 seconds
+   setTimeout(() => {
+    messageSection.innerHTML = '';
+  }, 4000); // Wait for 4 seconds before clearing
+
 });

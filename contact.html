@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="contact" id="contact">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About </a>
+        <a href="log.html">Sign Up</a>
+      </nav>
+      <h1 class="us">CATS OUR US!</h1>
+      <p>Rescue, Adoption, and Rehab for our friends!</p>
+    </header>
+    <main class="contact">
+      <img
+        src="./images/LtDan3.jpeg"
+        alt="cat.png"
+        width="804px"
+        height="400px"
+      />
+      <div class="c">
+        <h1>If You Would Like To Volunteer Or Donate!</h1>
+        <p>You can contact us at anytown, anystate 99999, USA</p>
+        <p>Tax credits are given</p>
+        <p>Please leave name and email</p>
+        <form id="form2" class="from2">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <span id="emailError"></span>
+
+          <input type="text" name="first" placeholder="First Name" required />
+          <span id="nameError"></span>
+
+          <input type="text" name="last" placeholder="Last Name" required />
+
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+      <section class="message"></section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
